@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:stretchColumns="1">
+    <TextView android:text="Lista de Produtos" />
+    <View android:layout_height="2dip"
+        android:layout_margin="10dp"
+        android:background="#FF909090"/>
+    <TableRow>
+        <TextView android:text="Café"
+            android:layout_column="0" />
+        <TextView android:text="R$ 1,50"
+            android:layout_column="1"
+            android:gravity="right"/>
+    </TableRow>
+    <TableRow>
+        <TextView android:text="Pizza"
+            android:layout_column="0" />
+        <TextView android:text="R$ 12,00"
+            android:layout_column="1"
+            android:gravity="right"/>
+    </TableRow>
+    <TableRow>
+        <TextView android:text="Água"
+            android:layout_column="0" />
+        <TextView android:text="R$ 3,00"
+            android:layout_column="1"
+            android:gravity="right"/>
+    </TableRow>
+    <View android:layout_height="2dip"
+        android:layout_margin="10dp"
+        android:background="#FF909090"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="bottom|center_horizontal">
+        <Button
+            style="?android:attr/button"
+            android:layout_width="wrap_content"
+            android:layout_height="35dip"
+            android:text="Cancelar"/>
+        <Button
+            style="?android:attr/button"
+            android:layout_width="wrap_content"
+            android:layout_height="35dip"
+            android:text="Comprar"/>
+    </LinearLayout>
+</TableLayout>
